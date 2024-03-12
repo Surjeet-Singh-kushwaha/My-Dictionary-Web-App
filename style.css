@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+#site-header {
+    background-color: #212121;
+    color: white;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100; /* To make sure the header is above other elements */
+}
+.head-box {
+    /* margin-top: 1vw; */
+    display: flex;
+    justify-content: center;
+}
+
+.head-box h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.form-box {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: start;
+    position: fixed;
+    bottom: 50px;
+    left: 30%;
+
+
+}
+
+/* For input words */
+.form-box form {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+
+#in {
+
+    width: 350px;
+    height: 50px;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    color: #212121;
+}
+
+#btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 12px;
+}
+
+#btn:active {
+    background-color: rgb(147, 172, 123);
+}
+
+@media screen and (max-width:430px) {
+    .head-box h1 {
+        font-size: larger;
+    }
+
+    .form-box {
+        left: 0;
+
+    }
+
+    .form-box form {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        margin: 10vw;
+    }
+
+    #in {
+        width: 80vw;
+        /* margin: 10vw;   */
+    }
+
+    #btn {
+        width: 50vw;
+        align-self: center;
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+
+    .container {
+        font-size: 11px;
+    }
+
+
+}
+
+/* Main  Container Css */
+main{
+    display: flex;
+   flex-direction: column;
+    width: 90vw;
+    height: 70vh;
+    border: 5px solid #333;
+    padding: 10px;
+    margin: 0 5vw 0 5vw;
+ overflow: scroll;
+}
+main::-webkit-scrollbar{
+    display: none;
+}
+
+/* For showing data */
+.container {
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    gap: 10px;
+
+    /* border: 2px solid red; */
+    align-self: center;
+    margin: 5vw;
+    margin-bottom: 200px;
+    font-size: 23px;
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal; */
+}
+
+.container:hover {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.word-box {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+
+}
+
+.word-box audio {
+    /* background-color: #4CAF50; Green */
+    border: none;
+    /* color: white; */
+    width: 100px;
+    height: 20px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    justify-self: center;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.word-box {
+ 
+    font-weight: 800;
+
+}
+
+.meaning {
+    /* font-size: 23px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.synonyms-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}

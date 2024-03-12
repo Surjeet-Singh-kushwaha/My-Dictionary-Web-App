@@ -69,14 +69,14 @@
     background-color: rgb(147, 172, 123);
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:760px) {
     .head-box h1 {
         font-size: larger;
     }
 
     .form-box {
         left: 0;
-     bottom: 5px;
+     bottom: 20px;
     }
 
     .form-box form {
@@ -107,7 +107,9 @@
     .container {
         font-size: 11px;
     }
-
+main{
+    width: 100vw;
+}
 
 }
 

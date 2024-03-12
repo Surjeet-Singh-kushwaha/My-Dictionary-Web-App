@@ -129,7 +129,8 @@ main::-webkit-scrollbar{
 /* For showing data */
 .container {
     width: 80vw;
-
+    word-wrap: break-word;
+    overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
     padding: 3vw;

@@ -7,6 +7,7 @@ document.getElementById('btn').addEventListener('click', function (event) {
         alert("Please enter a word");
     } else {
     testData(inputValue);
+    document.getElementById('in').value =''
 }
 
 });
